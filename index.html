@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@7.10.3/babel.min.js"
+      crossorigin
+    ></script>
+     <link rel="stylesheet" href="style.css">
+    <title>Intro to react</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Main() {
+        return (
+          <div id="container">
+          <header>
+            <h1>
+              INTRO TO REACT
+            </h1>
+            <img src="https://cdn.dribbble.com/users/2442115/screenshots/8699490/dec-01-2019_19-16-16.gif"></img>
+            </header>
+            <div>
+              <p>
+                ReactJS, also known as React, is a popular JavaScript library
+                for building user interfaces. It is also referred to as a
+                front-end JavaScript library. It was developed by Facebook and
+                is widely used for creating dynamic and interactive web
+                applications.
+              </p>
+            </div>
+            <div>
+              <p>
+                React is a JavaScript library for building user interfaces (UIs)
+                on the web. React is a declarative, component based library that
+                allows developers to build reusable UI components and It follows
+                the{" "}
+                <a href="https://www.geeksforgeeks.org/reactjs-introduction/">
+                  Virtual DOM
+                </a>{" "}
+                (Document Object Model) approach, which optimizes rendering
+                performance by minimizing DOM updates. React is fast and works
+                well with other tools and libraries.
+              </p>
+            </div>
+            <div>
+              <p>
+                React operates by creating an in-memory virtual DOM rather than
+                directly manipulating the browser’s DOM. It performs necessary
+                manipulations within this virtual representation before applying
+                changes to the actual browser DOM. React is efficient, altering
+                only what requires modification.
+              </p>
+            </div>
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<Main />);
+    </script>
+  </body>
+</html>
